@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "975430397808",
+    "firebase_url": "https://ramdairy-f5586.firebaseio.com",
+    "project_id": "ramdairy-f5586",
+    "storage_bucket": "ramdairy-f5586.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975430397808:android:609b522ab79356a3",
+        "android_client_info": {
+          "package_name": "com.om.dairy.ramdairy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975430397808-2gbkh47976oo6mmk8n9t0rsigsdgqct1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.om.dairy.ramdairy",
+            "certificate_hash": "369a35d6b497b2755893b1590f0f39fab1a56073"
+          }
+        },
+        {
+          "client_id": "975430397808-rm8me9k38k23htioeq4jadigvhrmktku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_4JDvw0DiCZdpKFFtKts6OtVKPBULPsI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975430397808-rm8me9k38k23htioeq4jadigvhrmktku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

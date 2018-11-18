@@ -7,118 +7,120 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".CalculatoActivity"
     tools:showIn="@layout/activity_calculato">
+
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <!-- Gold-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:gravity="center">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvGold5LitterLable"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Gold5Litter"
-                android:textColor="#000000"
-                android:textSize="18sp"/>
-
-            <EditText
-                android:id="@+id/etGold5LitterAm"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:hint="am"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                tools:text="10"
-                android:inputType="number"
-                />
-            <EditText
-                android:id="@+id/etGold5LitterPm"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:hint="pm"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:inputType="number"
-                />
-            <TextView
-                android:id="@+id/tvGold5LitterPriceLable"
+            <!-- Gold-->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="end"
-                android:layout_marginLeft="10dp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                />
-        </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#3538bf">
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
-        </View>
-        <!-- Taza -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:gravity="center">
-            <TextView
-                android:id="@+id/tvTazaLable"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:text="Taza"
-                android:textColor="#000000"
-                android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/tvGold5LitterLable"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="Gold5Litter"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
 
-            <EditText
-                android:id="@+id/etTazaAm"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:hint="am"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:inputType="number"
-                />
-            <EditText
-                android:id="@+id/etTazaPm"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:hint="pm"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:inputType="number"
-                />
-            <TextView
-                android:id="@+id/tvTazaPriceLable"
+                <EditText
+                    android:id="@+id/etGold5LitterAm"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="am"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="10" />
+
+                <EditText
+                    android:id="@+id/etGold5LitterPm"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="pm"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvGold5LitterPriceLable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="end"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#3538bf">
+
+            </View>
+            <!-- Taza -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0"
-                android:gravity="end"
-                android:layout_marginLeft="10dp"
-                android:textColor="#000000"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                />
-        </LinearLayout>
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/tvTazaLable"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="Taza"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etTazaAm"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="am"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etTazaPm"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="pm"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTazaPriceLable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="end"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
